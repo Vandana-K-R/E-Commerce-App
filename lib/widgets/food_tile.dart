@@ -4,8 +4,8 @@ import 'package:sushishop/models/food_model.dart';
 
 class FoodTile extends StatelessWidget {
   final Food food;
-  void Function()? onTap;
-   FoodTile({super.key, required this.food,required this.onTap});
+  final void Function()? onTap;
+   const FoodTile({super.key, required this.food,required this.onTap});
 
   @override
   Widget build(BuildContext context) {
